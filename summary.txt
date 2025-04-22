@@ -1,0 +1,13 @@
+there are 2 types of languages ..strongly typed and
+weekly typed....
+strongly typed have less runtime errors
+also two types of languages -> compiled and interpreted
+--->compiled like c++...->compling and err check and run the compiled
+also they are safe languages bcs they eliminate errors
+these have both compile time and runtime errors here
+
+---->interpreted laguages have only runtime err
+c++ is a stringly typed and js is a loosely typed language
+typescript is a superset of javascript maintained by microsoft.
+typescipt is never executed..it is converted to js first and then is runned
+

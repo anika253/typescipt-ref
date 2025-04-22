@@ -1,0 +1,23 @@
+{
+  "name": "typescipt-ref",
+  "version": "1.0.0",
+  "description": "a repo u can use for learning typescipt from basics to advanced",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anika253/typescipt-ref.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anika253/typescipt-ref/issues"
+  },
+  "homepage": "https://github.com/anika253/typescipt-ref#readme",
+  "dependencies": {
+    "typescipt": "^1.0.0"
+  }
+}
