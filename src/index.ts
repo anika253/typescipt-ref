@@ -73,6 +73,7 @@ greet({
 // alternative here-->custom type here
 // create a function isLegal that returns a false or true depending on legalAge
 interface userType {
+  // no = in interface here
   firstName: string;
   lastName: string;
   age: number;
@@ -81,4 +82,26 @@ interface userType {
 function isLegal(user: userType) {
   if (user.age > 18) return true;
   else return false;
+}
+// type or interfaces
+
+type stringOrnumber = string | number;
+function sum5(a: stringOrnumber, b: stringOrnumber) {}
+
+interface manager {
+  name: string;
+  age: number;
+}
+interface Employee {
+  name: string;
+  department: string;
+}
+type TeamLead = manager | Employee; // should have name , age , deptt all 3 of them...
+let t: TeamLead = {
+  name: "hark",
+  age: 21,
+  department: "HR",
+};
+function greet5(name: string): string {
+  return "Hello" + name;
 }
