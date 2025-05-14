@@ -267,5 +267,101 @@ interface Admin {
 }
 interface User {
   namne: string;
-  permissions: str;
+  permissions: string;
 }
+type UserorAdmin = Admin | User;
+console.log(user.name);
+// interface k andr we we can use intersection or union
+
+// arrays in ts
+function getMax(nums: number[]) {
+  let maxValue = -1000000000;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] > maxValue) {
+      maxValue = nums[i];
+    }
+  }
+  return maxValue;
+}
+interface Address {
+  city: string;
+  pincode: string;
+  addresses: Address[];
+}
+interface Userrrrr {
+  name: string;
+  lastName: string;
+  age: number;
+}
+
+function filterUsers(users: Userrrrr[]) {
+  let ans = [];
+  for (let i = 0; i < users.length; i++) {
+    if (users[i].age > 18) {
+      ans.push(users[i]);
+    }
+  }
+  return ans;
+}
+const filteredUsers = filterUsers([
+  {
+    name: "anika",
+    lastName: "sharma",
+    age: 21,
+  },
+]);
+// union amd intersection work opposite  to their name
+type success = {
+  success: true;
+  data: string;
+};
+type failure = {
+  success: false;
+  error: string;
+};
+type result = success | failure;
+
+function handle(res: result) {
+  if (res.success) {
+    console.log(res.data);
+  } else {
+    console.log(res.error);
+  }
+}
+/*Final Tip:
+Use union (|) when you want to allow either type.
+
+Use intersection (&) when you want to combine multiple types.*/
+type Dog = {
+  bark: () => void;
+};
+
+type Cat = {
+  meow: () => void;
+};
+
+type Pet = Dog | Cat;
+
+const pet1: Pet = {
+  bark: () => console.log("woof"),
+};
+
+const pet2: Pet = {
+  meow: () => console.log("meow"),
+};
+type Employee1 = {
+  name: string;
+  empId: number;
+};
+
+type Admine = {
+  role: string;
+};
+
+type AdminEmployee = Employee1 & Admine;
+
+const userrrr: AdminEmployee = {
+  name: "Anika",
+  empId: 123,
+  role: "manager",
+};
