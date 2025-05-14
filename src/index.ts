@@ -177,3 +177,57 @@ class Manager implements people {
 // creating an object of class manager;
 let userrr = new Manager("John", 30);
 console.log(userrr.age);
+
+// interface ko tum further classes m use kr skte ho but not the same with types here.
+
+//abstract classes ::
+
+abstract class User5 {
+  name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+  abstract greet(): string;
+  hello() {
+    console.log("hi there");
+    // u can define default functions hello here like this in abstract class here
+  }
+}
+
+// diff bw interfaces and abstract class?
+/*
+both very similar to each other but 
+
+
+*/
+class Employee2 extends User5 {
+  // uses extends not implements here
+  name: string;
+  constructor(name: string) {
+    super(name);
+    this.name = name;
+  }
+  greet() {
+    return "hi" + this.name;
+  }
+}
+interface userr {
+  name: string;
+  age: number;
+}
+
+// TYPES
+type Userr = {
+  name: string;
+  age: number;
+};
+// interace m no = ..but it in types
+// types let u do unions and intersections
+type A = {
+  a: string;
+};
+type B = {
+  b: number;
+};
+type C = A & B;
+type D = A | B;
