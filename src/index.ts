@@ -231,3 +231,41 @@ type B = {
 };
 type C = A & B;
 type D = A | B;
+
+type Employeee = {
+  name: string;
+  startDate: string;
+};
+type Managerr = {
+  name: string;
+  department: string;
+};
+type teamLead = Employeee & Managerr;
+
+let t1: teamLead = {
+  name: "ANIKA",
+  startDate: "01-02-2005",
+  department: " head software MICROSOFT ",
+};
+
+type GoodUSER = {
+  name: string;
+  gift: string;
+};
+type BadUser = {
+  name: string;
+  ip: string;
+};
+type user = GoodUSER | BadUser;
+// properties from A or B or both here;
+// create 2 types user and admin
+//create a function that takes either a user or admin
+// as an input and returns a string "welcome ,[name]";
+interface Admin {
+  name: string;
+  permission: string;
+}
+interface User {
+  namne: string;
+  permissions: str;
+}
