@@ -105,3 +105,75 @@ let t: TeamLead = {
 function greet5(name: string): string {
   return "Hello" + name;
 }
+// ts ->a strong typed language
+
+function isEven(num: number): boolean {
+  if (num % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+// interface to define custom types here .
+interface User {
+  name: string;
+  age: number;
+  address?: {
+    // making address an optional field here
+
+    city?: string;
+    country?: string;
+    pincode: number;
+  };
+}
+let user = {
+  name: "harkirat",
+  age: 21,
+  address: {
+    city: "Chandigarh",
+    country: "India",
+    pincode: 569655,
+  },
+};
+
+let user2 = {
+  name: "anika",
+  age: 21,
+};
+function isLegalll(user: User): boolean {
+  return user.age >= 18;
+}
+const answer = isLegalll(user);
+// how to make address optional ?
+console.log(user2.age);
+
+interface people {
+  name: string;
+  age: number;
+  //greet: () => string;
+}
+const person: people = {
+  name: "hark",
+  age: 21,
+  greet: () => {
+    return "hi";
+  },
+};
+
+// class in cpp = interface in typescript here
+
+// interface is a typescript phenomenon classes can also implement the interfaces
+
+class Manager implements people {
+  name: string;
+  age: number;
+  number: string; // extra thing of ur age
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+    this.number = "3435657";
+  }
+}
+// creating an object of class manager;
+let userrr = new Manager("John", 30);
+console.log(userrr.age);
