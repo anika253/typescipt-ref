@@ -1,6 +1,6 @@
 # 📘 TypeScript: From Basics to Advanced 🚀
 
-Welcome to the **TypeScript: From Basics to Advanced** repository! This project is designed to be a comprehensive and practical guide to learning TypeScript—from its core concepts to advanced features, patterns, and real-world usage.
+Welcome to the **TypeScript: From Basics to Advanced** repository! This project is designed to be a comprehensive and practical guide to learning TypeScript—from its core concepts to advanced features, patterns, and real-world usage.It induces errors lesser than javascript.
 
 ---
 
